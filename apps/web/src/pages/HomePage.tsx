@@ -2,8 +2,10 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { type HealthResponse } from '@studyforge/shared-types';
 
+const apiUrl = import.meta.env.VITE_API_URL || '';
+
 async function fetchHealth(): Promise<HealthResponse> {
-  const { data } = await axios.get<HealthResponse>('/api/health');
+  const { data } = await axios.get<HealthResponse>(`${apiUrl}/api/health`);
   return data;
 }
 
