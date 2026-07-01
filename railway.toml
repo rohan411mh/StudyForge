@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "npm config set cache /tmp/.npm-cache --global && npm ci && npx tsc -b apps/api/tsconfig.json"
+buildCommand = "npm config set cache /tmp/.npm-cache --global && npm ci && npx tsc -b"
 
 [deploy]
 startCommand = "npm run start --workspace=@studyforge/api"
