@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Build output
+dist/
+build/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Vite/Tailwind compiled config artefacts (source files are *.ts)
+apps/web/vite.config.js
+apps/web/vite.config.js.map
+apps/web/vite.config.d.ts
+apps/web/vite.config.d.ts.map
+apps/web/tailwind.config.js
+apps/web/tailwind.config.js.map
+apps/web/tailwind.config.d.ts
+apps/web/tailwind.config.d.ts.map
+
+# Prisma generated client
+apps/api/src/generated/
+
+# macOS system files
+.DS_Store
+
+# Editor
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
